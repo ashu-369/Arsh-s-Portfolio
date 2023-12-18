@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cashierCalculator.css">
+    <script src="cashierCalculator.js"></script>
+</head>
+
+<body>
+    <div id="admin">
+        <h1>Admin</h1>
+        <div class="indication">Add a new product</div>
+        <div class="_admin"><label for="productName">Product Name:</label>
+            <input type="text" placeholder="Product name" id="addProductName" name="addProductName">
+            <button id="addProduct" onclick="addProduct()">Add Product</button>
+        </div>
+        <div class="indication" >Select a product then add the price per unit</div>
+        <div class="_admin">
+            <select name="selectProducts1" id="selectProducts1">
+            </select>
+            <input type="text" placeholder="Enter the price" id="productPrice">
+            <button onclick="addProductPrice()">Add Price</button>
+        </div>
+        
+    </div>
+
+    <div id="checkout">
+        <h1>Checkout</h1>
+    <div class="_checkout">
+        <button onclick="newTransaction()">New Transaction</button>
+    </div>
+    <div class="indication">Select a product then type the number of units</div>
+    <div class="_checkout">
+        <select name="selectProducts2" id="selectProducts2"></select>
+        <label for="unitInput">Unit: </label>
+        <input type="number" name="unitInput" id="unitInput">
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div class="_checkout">
+        <div class="column">
+            <div class="keypad" onclick="addUnits(1)">1</div>
+            <div class="keypad" onclick="addUnits(2)">2</div>
+            <div class="keypad" onclick="addUnits(3)">3</div>
+        </div>
+        <div class="column">
+            <div class="keypad" onclick="addUnits(4)">4</div>
+            <div class="keypad" onclick="addUnits(5)">5</div>
+            <div class="keypad" onclick="addUnits(6)">6</div>
+        </div>
+        <div class="column">
+            <div class="keypad" onclick="addUnits(7)">7</div>
+            <div class="keypad" onclick="addUnits(8)">8</div>
+            <div class="keypad" onclick="addUnits(9)">9</div>
+        </div>        
+    </div>
+    <div class="_checkout">
+        <button onclick="pay()">Pay</button>
+    </div>
+    
+    <div id="receipt">
+        <h1 >Receipt</h1>
+        <div class="_receipt">
+            <table border="black">
+                <thead>
+                  <tr>
+                    <th colspan="4" id="dateDiv">Date:</th>
+                  </tr>
+                  <tr>
+                    <th colspan="4" id="timeDiv">Time:</th>
+                  </tr>
+                  <tr>
+                    <th> Product Name </th>
+                    <th> price (in $)/ unit </th>
+                    <th> Unit(s) </th>
+                    <th> Price </th>
+                  </tr>
+                </thead>
+                <tbody id="receiptProducts">
+                  
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="4" id="price">Total Price: 0</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" id="tax">Taxes: 0</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" id="totalPrice">Amount Due: 0</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+        
+        <div class="_receipt"></div>
+        <div class="_receipt"></div>
+        <div class="_receipt"></div>
+        <div class="_receipt"></div>
+    </div>
+    
+</body>
+
+</html>

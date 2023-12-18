@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* border: 2vw solid white; */
+}
+
+#heading{
+    margin: 16vw 16vw;
+    font-size: 8vw;
+    text-align: center;
+    background-color: rgb(16, 16, 83);
+    position: absolute;
+    right: 45vw;
+    color: white;
+    padding: 1vw;
+    border: 1vw solid white;
+    border-radius: 5vw;
+}
+#instaIcon, #githubIcon, #emailIcon{
+    width: 3.5vw;
+    position: relative;
+    top: 0.8vw;
+    left: 1vw;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 3vw;
+   position: relative;
+   left: 2vw;
+    z-index: 2;
+    
+}
+p{
+    border: 0.4vw solid black;
+    border-radius: 2.5vw;
+    position: relative;
+    left:7vw;
+    margin:1vw;
+    width:50vw;
+    height: 10vh;
+    background-color: white;
+}
+
+#contactInfo{
+    display: inline-block;
+    background-color: gray;
+    width:70vw;
+    height: 90vh;
+    position: absolute;
+    right: 2.5vw; 
+    top: 2.5vw;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1vw solid black;
+    border-radius: 10vw;
+}

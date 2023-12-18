@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+hr{
+    margin: 0 4vw ;
+    height: 0.1vw;
+    background-color: white;
+}
+
+body{
+    background-color: rgb(0, 0, 36);
+}
+
+#navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(26, 26, 68);
+    position: sticky;
+    top: 0;
+}
+
+#logo{
+    font-size: 1.4rem;
+    color: white;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#navBar ul li{
+    list-style: none;
+    margin: 0 2vw;
+    /* color:white; */
+}
+
+#navBar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#navBar ul li a:hover{
+    color: rgb(145, 145, 230);
+    font-size: 1.02em;
+}
+
+#firstSlideInterface{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4.4vw 2vw;
+    /* border: 0.5vw solid white; */
+    padding: 4vw;
+}
+
+#firstSlideInterface #left{
+    font-size: 4vw;
+    line-height: 5vw;
+}
+
+#png{
+    width: 30vw;
+}
+
+name{
+    color: rgb(127, 63, 156);
+}
+
+#secondSlideInterface{
+    margin: 10vw 4vw 10vw 4vw;
+    /* display: flex; */
+
+}
+
+#secondSlideInterface hr{
+    margin: 4vw 4vw 0 4vw;
+    /* height: a; */
+}
+
+#ex1{
+    border-left: 0.3vw solid white;
+    border-radius: 1.5vw;
+    width: 20vw;
+    height: 10vw;
+    padding-left: 1vw;
+    font-size: 1.5vw;;
+}
+#ex2{
+    border-left: 0.3vw solid white;
+    border-radius: 1.5vw;
+    width: 20vw;
+    height: 12.5vw;
+    padding-left: 1vw;
+    font-size: 1.5vw;;
+}
+#ex3{
+    border-left: 0.3vw solid white;
+    border-radius: 1.5vw;
+    width: 20vw;
+    height: 19.5vw;
+    padding-left: 1vw;
+    font-size: 1.5vw;;
+}
+
+#timelineContent{
+    display: flex;
+    /* flex: 1; */
+    justify-content: space-between;
+    margin: 0 4vw;
+}
+
+time{
+    text-decoration: underline;
+}
+
+#ex1 p, #ex2 p, #ex3 p{
+    margin-top: 0.3vw;
+}
+
+h1{
+    text-align: center;
+    font-size: 5vw;
+    margin-bottom: 10vw;;
+}
+
+#thirdSlideInterface{
+    margin: 4vw;
+    padding: 2vw 4vw;
+    background-color: rgb(127, 63, 156);background-color: rgb(0, 0, 36);
+    display: flex;
+    justify-content: space-around;
+    border: 0.3vw solid white;
+    border-radius: 1.5vw;
+}
+#thirdSlideInterface div h2{
+    color: white;
+    border: 0.3vw solid white;;
+    height:4vh;
+    width: 9vw;
+    text-align: center;
+    border-radius: 0.6vw;
+    background-color: rgb(0, 0, 36);
+    margin-bottom: 2vw;
+}
+
+#thirdSlideInterface div p{
+    padding-bottom: 1vw;
+}
+
+#instaIcon{
+    width: 1vw;
+    position: relative;
+    top: 0.2vw;
+    right: 0.5vw;
+}
+
+#githubIcon{
+    width: 1.1vw;
+    position: relative;
+    top: 0.22vw;
+    right: 0.5vw;
+}
+
+#emailIcon{
+    width: 1.1vw;
+    position: relative;
+    top: 0.22vw;
+    right: 0.5vw;
+}
+a{
+    text-decoration: none;
+}
+
+#cheatsheet{
+    text-align: center;
+}
+button{
+    width: 10vw;
+    height: 3vw;
+    color: rgb(13, 13, 71);
+    border: 0.4vw solid rgb(122, 122, 201);
+    border-radius: 1vw;
+}
+button a{
+    color: rgb(13, 13, 71);
+    font-size: 1vw;
+    font-weight: 700;
+    
+}
